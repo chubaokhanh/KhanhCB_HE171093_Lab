@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 import {
   Lock,
   User,
@@ -336,20 +337,13 @@ export default function LoginPage() {
         {/* Footer Note */}
         <div className="mt-6 flex flex-col items-center gap-3 text-center">
           <p className="text-xs text-slate-400">
-            Don&apos;t have an account?{" "}
-            <a
-              href="#signup"
-              onClick={(e) => {
-                e.preventDefault();
-                setStatusMessage({
-                  type: "error",
-                  text: "Account registration is closed for this demo environment.",
-                });
-              }}
+            Chưa có tài khoản?{" "}
+            <Link
+              href="/register"
               className="font-semibold text-indigo-400 hover:text-indigo-300 hover:underline transition-colors"
             >
-              Request Access
-            </a>
+              Đăng ký ngay
+            </Link>
           </p>
 
           <div className="flex items-center gap-1.5 text-[11px] text-slate-500">
