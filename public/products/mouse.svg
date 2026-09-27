@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#022c22" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="mouseBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <filter id="glow4" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#10b981" flood-opacity="0.25" />
+    </filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg4)" rx="16" />
+  <circle cx="200" cy="150" r="110" fill="#10b981" opacity="0.06" />
+  <g filter="url(#glow4)" transform="translate(135, 50)">
+    <!-- Ergonomic Mouse Shape -->
+    <path d="M 50 20 C 15 20, 10 70, 10 130 C 10 180, 30 200, 70 200 C 110 200, 125 170, 125 125 C 125 65, 95 20, 50 20 Z" fill="url(#mouseBody)" stroke="#475569" stroke-width="2.5" />
+    <!-- Thumb Rest Wing -->
+    <path d="M 12 110 C 2 120, -5 145, 5 175 C 15 185, 25 190, 40 190" fill="#1e293b" stroke="#475569" stroke-width="2" />
+    <!-- Scroll Wheel -->
+    <rect x="52" y="45" width="16" height="38" rx="8" fill="#d97706" stroke="#fbbf24" stroke-width="1.5" />
+    <!-- Buttons split line -->
+    <line x1="60" y1="20" x2="60" y2="45" stroke="#475569" stroke-width="2" />
+    <line x1="60" y1="83" x2="60" y2="115" stroke="#475569" stroke-width="2" />
+    <!-- Accent LED line -->
+    <path d="M 30 140 Q 60 165 90 140" fill="none" stroke="#10b981" stroke-width="3" stroke-linecap="round" />
+  </g>
+</svg>
